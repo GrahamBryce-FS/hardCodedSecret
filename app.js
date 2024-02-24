@@ -26,10 +26,9 @@ const server = http.createServer((req,res)=>{
   res.end(f)
 });
 
-// simple operation if else statement
+// simple operation if else statement with secretKey
 function performSecretOperation(condition) {
   if (condition) {
-      // Use the secret key for some operation
       console.log("Authenticated with secret key:", secretKey);
   } else {
       console.log("Operation failed.");
